@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies (if any are added in the future)
-RUN npm install --production || true
+# Install dependencies (currently none, but this ensures future dependencies are installed)
+RUN npm install --production 2>/dev/null || echo "No dependencies to install"
 
 # Copy application files
 COPY . .

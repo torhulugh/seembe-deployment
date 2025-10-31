@@ -1,5 +1,3 @@
-const http = require('http');
-
 // Simple test to verify the application works
 console.log('Running basic tests...');
 
