@@ -1,0 +1,13 @@
+{
+  "name": "seembe-deployment",
+  "version": "1.0.0",
+  "description": "Deployment-ready application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": ["deployment"],
+  "author": "",
+  "license": "ISC"
+}
