@@ -1,0 +1,22 @@
+.not-found {
+  min-height: calc(100vh - 180px);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  color: #312e81;
+}
+
+.not-found h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.not-found__button {
+  border-radius: 14px;
+  padding: 0.85rem 1.8rem;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 16px 40px rgba(79, 70, 229, 0.18);
+}

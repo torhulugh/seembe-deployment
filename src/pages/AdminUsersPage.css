@@ -1,0 +1,86 @@
+.admin-users {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-block: 2rem 3rem;
+}
+
+.admin-users header h1 {
+  font-size: clamp(2rem, 4vw, 2.4rem);
+  margin-bottom: 0.35rem;
+}
+
+.admin-users header p {
+  color: #4338ca;
+}
+
+.admin-users__list {
+  background: #fff;
+  border-radius: 22px;
+  padding: 2.25rem;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 24px 58px rgba(79, 70, 229, 0.12);
+}
+
+.admin-users__list h2 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  color: #312e81;
+}
+
+.admin-users__list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-users__list th,
+.admin-users__list td {
+  text-align: left;
+  padding: 0.9rem 0.75rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.admin-users__list select {
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  padding: 0.5rem 0.75rem;
+}
+
+.admin-users__list button {
+  border-radius: 12px;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  padding: 0.55rem 0.9rem;
+  color: #b91c1c;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .admin-users__list table,
+  .admin-users__list thead,
+  .admin-users__list tbody,
+  .admin-users__list th,
+  .admin-users__list td,
+  .admin-users__list tr {
+    display: block;
+  }
+
+  .admin-users__list tr {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+    padding-bottom: 1rem;
+  }
+
+  .admin-users__list td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .admin-users__list td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #312e81;
+  }
+}

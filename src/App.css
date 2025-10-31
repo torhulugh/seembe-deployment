@@ -1,0 +1,57 @@
+#root {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8f9ff 0%, #ffffff 100%);
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #0f172a;
+}
+
+.app-main {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+  flex: 1;
+  padding-top: 2.5rem;
+}
+
+.app-footer {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  background: #0f172a;
+  color: rgba(255, 255, 255, 0.82);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.page-loading,
+.page-error {
+  padding: 2.5rem;
+  border-radius: 18px;
+  width: min(420px, 90%);
+  margin: 3rem auto;
+  text-align: center;
+  font-weight: 600;
+}
+
+.page-loading {
+  background: rgba(99, 102, 241, 0.08);
+  color: #4338ca;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.page-error {
+  background: rgba(239, 68, 68, 0.12);
+  color: #b91c1c;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.app-loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  color: #4338ca;
+}

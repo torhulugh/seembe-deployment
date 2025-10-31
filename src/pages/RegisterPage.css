@@ -1,0 +1,6 @@
+@import "./LoginPage.css";
+
+.auth--register h1 {
+  line-height: 1.2;
+}
+
